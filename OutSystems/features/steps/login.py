@@ -21,7 +21,7 @@ def user_enters_username(context):
 def user_enters_password(context):
     print("Called 6th")
     context.web.switch_to_frame("iframe")
-    context.web.find_by_xpath("//*[@id='OutSystemsUIWeb_wt14_block_wtLogin_OutSystemsUIWeb_wt15_block_wtLogin_OutSystemsUIWeb_wt6_block_wtInput_wtPasswordInput']").send_keys("pradeep@1977")
+    context.web.find_by_xpath("//*[@id='OutSystemsUIWeb_wt14_block_wtLogin_OutSystemsUIWeb_wt15_block_wtLogin_OutSystemsUIWeb_wt6_block_wtInput_wtPasswordInput']").send_keys("")
     context.web.switch_to_default()
 
 @when("clicks on the Log In button")
