@@ -38,5 +38,5 @@ def request_form_is_loaded(context):
     context.web.switch_to_frame("iframe")
     elements = context.web.finds_by_xpath("//*[@id='wt41_OutSystemsUIWeb_wt2_block_wtContent_wtMainContent_OutSystemsUIWeb_wt28_block_wtColumn1_OutSystemsUIWeb_wt25_block_wtContent_wtShortDescription']")
     context.web.switch_to_default()
-    assert len(elements) > 0
+    assert len(elements) == 0
     #context.web.switch_to_default()
